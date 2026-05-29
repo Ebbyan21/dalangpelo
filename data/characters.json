@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Acil",
+        "trait": "Si Polos",
+        "img": "assets/img/characters/acil.png",
+        "desc": "Acil adalah karakter yang manja, lucu, dan polos, sering membuat orang gemas dengan tingkah lakunya. Meski terkadang menyebalkan, ia sangat penyayang dan perhatian pada teman-temannya.",
+        "theme": "acil-card"
+    },
+
+    {
+        "name": "Leri",
+        "trait": "Si Pintar?",
+        "img": "assets/img/characters/leri.png",
+        "desc": "Leri adalah sahabat Acil sejak kecil. Selama masa kecil mereka, Leri tinggal bersama Acil, Monyet Kane, dan Om Gepeng karena kesibukan orang tua Leri.",
+        "theme": "leri-card"
+    },
+
+    {
+        "name": "Monyet Kane",
+        "trait": "Si Santuy",
+        "img": "assets/img/characters/monyet-kane.png",
+        "desc": "Monyet Kane adalah hewan peliharaan keluarga Acil dalam Dalang Pelo, digambarkan sebagai monyet kuning yang keren dan tampan.",
+        "theme": "kane-card"
+    },
+
+    {
+        "name": "Om Gepeng",
+        "trait": "Misterius",
+        "img": "assets/img/characters/om-gepeng.png",
+        "desc": "Om Gepeng adalah karakter bijaksana dan penyabar dalam Dalang Pelo. Seorang ilmuwan pencipta alat canggih, ia dikenal dengan kepala plontos, kumis panjang, dan janggut.",
+        "theme": "gepeng-card"
+    }
+]

@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Menghilangkan ekstensi .php dari URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Keamanan: Mencegah orang melihat isi folder secara langsung
+Options -Indexes
+
+# Mengatur halaman index utama
+DirectoryIndex index.php
