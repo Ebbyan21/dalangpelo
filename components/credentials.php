@@ -14,7 +14,7 @@
 
                     <a href="assets/docs/credentials.pdf" download="Dalang_Pelo_Credentials.pdf"
                        class="btn btn-dark btn-lg px-5">
-                        <i class="fas fa-download me-2"></i> Download PDF
+                        <i class="bi bi-download me-2"></i> Download PDF
                     </a>
 
                 </div>

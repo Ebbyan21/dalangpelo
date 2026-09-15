@@ -7,8 +7,8 @@
         </div>
 
         <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('assets/img/hero/heros-1.png');"></div>
-            <div class="carousel-item" style="background-image: url('assets/img/hero/heros-2.jpg');"></div>
+            <div class="carousel-item active" role="img" aria-label="Karakter Dalang Pelo naik motor" style="background-image: url('assets/img/hero/heros-1.png');"></div>
+            <div class="carousel-item" role="img" aria-label="Ilustrasi hero Dalang Pelo kedua" style="background-image: url('assets/img/hero/heros-2.jpg');"></div>
         </div>
     </div>
 </section>

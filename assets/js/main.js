@@ -58,19 +58,41 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Tap/click toggle deskripsi karakter
+    // Toggle deskripsi karakter — klik/tap
+    const toggleCard = (card) => {
+        const isActive = card.classList.contains('active');
+        document.querySelectorAll('.game-card').forEach(c => {
+            c.classList.remove('active');
+            c.setAttribute('aria-expanded', 'false');
+        });
+        if (!isActive) {
+            card.classList.add('active');
+            card.setAttribute('aria-expanded', 'true');
+        }
+    };
+
     document.querySelectorAll('.game-card').forEach(card => {
         card.addEventListener('click', (e) => {
             e.stopPropagation();
-            const isActive = card.classList.contains('active');
-            document.querySelectorAll('.game-card').forEach(c => c.classList.remove('active'));
-            if (!isActive) card.classList.add('active');
+            toggleCard(card);
+        });
+
+        // Keyboard accessibility: Enter / Space
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleCard(card);
+            }
         });
     });
 
     // Klik di luar card → tutup semua
     document.addEventListener('click', () => {
-        document.querySelectorAll('.game-card').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('.game-card').forEach(c => {
+            c.classList.remove('active');
+            c.setAttribute('aria-expanded', 'false');
+        });
     });
 
     // Chars arrow + drag scroll

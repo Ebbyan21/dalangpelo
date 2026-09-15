@@ -6,8 +6,8 @@
             <div class="col-lg-5 col-md-12">
                 <div class="about-img-wrapper">
                     <div class="about-img">
-                        <img src="assets/img/about/acil2.png" alt="Tentang Dalang Pelo" class="img-fluid img-main">
-                        <img src="assets/img/about/acil1.png" alt="Dalang Pelo Hover" class="img-fluid img-hover">
+                        <img src="assets/img/about/acil2.png" alt="Tentang Dalang Pelo" class="img-fluid img-main" width="380" height="380">
+                        <img src="assets/img/about/acil1.png" alt="Dalang Pelo Hover" class="img-fluid img-hover" width="380" height="380">
                     </div>
                 </div>
             </div>

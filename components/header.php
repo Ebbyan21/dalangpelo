@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
         <a class="navbar-brand" href="index.php">
-            <img src="assets/img/logo/logo-dalangpelo.png" alt="Dalang Pelo Logo">
+            <img src="assets/img/logo/logo-dalangpelo.png" alt="Dalang Pelo Logo" height="46">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

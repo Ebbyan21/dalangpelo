@@ -4,7 +4,7 @@
         <div class="row g-4">
 
             <div class="col-lg-4 col-md-12">
-                <img src="assets/img/logo/logo-dalangpelo.png" alt="Dalang Pelo" class="footer-logo">
+                <img src="assets/img/logo/logo-dalangpelo.png" alt="Dalang Pelo" class="footer-logo" width="140" height="56">
                 <div class="footer-about">
                     <p>Membawa tawa dan kebahagiaan lewat petualangan animasi yang absurd dan relatable bagi seluruh masyarakat Indonesia.</p>
                 </div>
@@ -42,8 +42,16 @@
             <div class="col-lg-4 col-md-4">
                 <div class="footer-contact">
                     <h5>Hubungi Kami</h5>
-                    <p><i class="bi bi-envelope me-2"></i> Freedaymanagement.ads@gmail.com</p>
-                    <p><i class="bi bi-whatsapp me-2"></i> +62 812 1422 1695</p>
+                    <p>
+                      <a href="mailto:Freedaymanagement.ads@gmail.com">
+                        <i class="bi bi-envelope me-2"></i> Freedaymanagement.ads@gmail.com
+                      </a>
+    				</p>
+                    <p>
+                      <a href="https://wa.me/6281214221695?text=Halo%20Dalang%20Pelo%2C%20saya%20mau%20tanya-tanya%20soal%20layanan%20kalian" target="_blank" rel="noopener">
+                        <i class="bi bi-whatsapp me-2"></i> +62 812 1422 1695
+                      </a>
+                    </p>
                 </div>
             </div>
 

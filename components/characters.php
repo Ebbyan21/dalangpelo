@@ -1,21 +1,7 @@
 <!-- ========== CHARACTERS ========== -->
 <?php
-$json_data   = file_get_contents('data/characters.json');
-$characters  = json_decode($json_data, true);
-
-$card_styles = [
-    'acil-card'   => 'background: linear-gradient(140deg, #2BB5F5, #0284C7);',
-    'leri-card'   => 'background: linear-gradient(140deg, #A78BFA, #7C3AED);',
-    'kane-card'   => 'background: linear-gradient(140deg, #FFD93D, #FFB100);',
-    'gepeng-card' => 'background: linear-gradient(140deg, #8D5524, #5D4037);',
-];
-
-$img_bg_styles = [
-    'acil-card'   => 'background: linear-gradient(135deg, #2BB5F5, #0284C7);',
-    'leri-card'   => 'background: linear-gradient(135deg, #A78BFA, #7C3AED);',
-    'kane-card'   => 'background: linear-gradient(135deg, #FFD93D, #FFA500);',
-    'gepeng-card' => 'background: linear-gradient(135deg, #8D5524, #5D4037);',
-];
+$json_data  = file_get_contents('data/characters.json');
+$characters = json_decode($json_data, true);
 ?>
 
 <section id="characters">
@@ -26,7 +12,7 @@ $img_bg_styles = [
         </div>
 
         <div class="chars-slider-container">
-            <button class="chars-arrow chars-arrow-left" aria-label="Prev">
+            <button class="chars-arrow chars-arrow-left" aria-label="Karakter sebelumnya">
                 <i class="bi bi-chevron-left"></i>
             </button>
 
@@ -34,17 +20,20 @@ $img_bg_styles = [
                 <div class="chars-row">
                     <?php if (!empty($characters)) : ?>
                         <?php foreach ($characters as $char) :
-                            $theme         = htmlspecialchars($char['theme']);
-                            $card_style    = $card_styles[$char['theme']] ?? '';
-                            $img_bg_style  = $img_bg_styles[$char['theme']] ?? '';
+                            $theme = htmlspecialchars($char['theme']);
                         ?>
-                            <div class="game-card <?php echo $theme; ?>" style="<?php echo $card_style; ?>">
+                            <div class="game-card <?php echo $theme; ?>"
+                                 tabindex="0"
+                                 role="button"
+                                 aria-expanded="false"
+                                 aria-label="<?php echo htmlspecialchars($char['name']); ?>, tekan Enter untuk lihat detail">
                                 <div class="card-inner">
                                     <div class="char-trait"><?php echo htmlspecialchars($char['trait']); ?></div>
-                                    <div class="char-img-container" style="<?php echo $img_bg_style; ?>">
+                                    <div class="char-img-container">
                                         <img src="<?php echo htmlspecialchars($char['img']); ?>"
                                              alt="<?php echo htmlspecialchars($char['name']); ?>"
                                              class="img-fluid"
+                                             width="200" height="200"
                                              loading="lazy">
                                     </div>
                                     <div class="char-content">
@@ -64,7 +53,7 @@ $img_bg_styles = [
                 </div>
             </div>
 
-            <button class="chars-arrow chars-arrow-right" aria-label="Next">
+            <button class="chars-arrow chars-arrow-right" aria-label="Karakter selanjutnya">
                 <i class="bi bi-chevron-right"></i>
             </button>
         </div>
